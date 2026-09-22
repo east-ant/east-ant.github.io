@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Your Name의 포트폴리오. 소개, 경력, 프로젝트, 기술, 수상, 학력, 연락처." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#top" class="nav-brand">Your Name</a>
+      <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.pdf" target="_blank" rel="noopener" class="nav-cta">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero container">
+      <h1 class="hero-title">I want to make things<br />that make a difference.</h1>
+      <p class="hero-tagline">
+        사용자 경험에 집중하는 <strong>풀스택 개발자</strong>입니다.
+        좋은 인터페이스를 만들고, 함께 협업하고, 배운 것을 나누는 일을 좋아합니다.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+        <a href="#contact" class="btn btn-ghost">연락하기</a>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <img src="assets/profile.jpg" alt="프로필 사진" class="about-photo" onerror="this.style.display='none'" />
+        <div class="about-text">
+          <p>
+            안녕하세요, <strong>Your Name</strong>입니다. 여기에 자신의 이야기를 적어주세요.
+            어떤 계기로 개발을 시작했고, 어떤 분야를 거쳐왔는지, 지금은 무엇에 관심이 있는지 서술형으로 작성하면 좋습니다.
+          </p>
+          <p>
+            현재는 <strong>접근성</strong>, <strong>React</strong>, <strong>디자인 시스템</strong>에 관심을 갖고 공부하고 있습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience" class="section container">
+      <h2 class="section-title">Experience</h2>
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">2024 — 현재</span>
+            <span class="timeline-location">서울</span>
+          </div>
+          <div class="timeline-body">
+            <h3>회사명 <span class="role">· 직무 (예: Frontend Developer)</span></h3>
+            <p>담당한 업무와 성과를 간단히 요약합니다.</p>
+            <ul class="bullets">
+              <li>주요 성과 1 — 수치가 있으면 더 좋습니다.</li>
+              <li>주요 성과 2</li>
+            </ul>
+            <div class="tags"><span>React</span><span>TypeScript</span><span>Node.js</span></div>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">2022 — 2024</span>
+            <span class="timeline-location">부산</span>
+          </div>
+          <div class="timeline-body">
+            <h3>이전 회사명 <span class="role">· 직무</span></h3>
+            <p>담당 업무 요약.</p>
+            <ul class="bullets">
+              <li>주요 성과 1</li>
+              <li>주요 성과 2</li>
+            </ul>
+            <div class="tags"><span>Vue</span><span>Python</span></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section container">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="assets/project-1.png" alt="프로젝트 1 스크린샷" class="project-thumb" onerror="this.src='https://placehold.co/800x480?text=Project+1'" />
+          <div class="project-body">
+            <h3>프로젝트 이름 1</h3>
+            <p class="project-desc">한 줄 설명. 무엇을 위해 만들었는지.</p>
+            <ul class="bullets">
+              <li>핵심 기능 또는 성과 1</li>
+              <li>핵심 기능 또는 성과 2</li>
+            </ul>
+            <div class="tags"><span>React</span><span>Firebase</span></div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Demo ↗</a>
+              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/project-2.png" alt="프로젝트 2 스크린샷" class="project-thumb" onerror="this.src='https://placehold.co/800x480?text=Project+2'" />
+          <div class="project-body">
+            <h3>프로젝트 이름 2</h3>
+            <p class="project-desc">한 줄 설명.</p>
+            <ul class="bullets">
+              <li>핵심 기능 또는 성과 1</li>
+              <li>핵심 기능 또는 성과 2</li>
+            </ul>
+            <div class="tags"><span>Next.js</span><span>PostgreSQL</span></div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Demo ↗</a>
+              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/project-3.png" alt="프로젝트 3 스크린샷" class="project-thumb" onerror="this.src='https://placehold.co/800x480?text=Project+3'" />
+          <div class="project-body">
+            <h3>프로젝트 이름 3</h3>
+            <p class="project-desc">한 줄 설명.</p>
+            <ul class="bullets">
+              <li>핵심 기능 또는 성과 1</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>FastAPI</span></div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul><li>HTML5</li><li>CSS3 / SASS</li><li>JavaScript (ES6+)</li><li>TypeScript</li><li>React</li><li>Next.js</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul><li>Node.js</li><li>Express</li><li>Python</li><li>PostgreSQL</li><li>MongoDB</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <ul><li>Git / GitHub</li><li>Docker</li><li>Vite / Webpack</li><li>Figma</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Other</h3>
+          <ul><li>접근성 (a11y)</li><li>디자인 시스템</li><li>테스트 (Jest, Playwright)</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Awards ===== -->
+    <section id="awards" class="section container">
+      <h2 class="section-title">Awards</h2>
+      <ul class="simple-list">
+        <li>
+          <div class="simple-meta">2025.06</div>
+          <div class="simple-body">
+            <h3>수상명</h3>
+            <p>수여 기관 — 간단한 설명.</p>
+          </div>
+        </li>
+        <li>
+          <div class="simple-meta">2024.11</div>
+          <div class="simple-body">
+            <h3>수상명</h3>
+            <p>수여 기관 — 간단한 설명.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section id="education" class="section container">
+      <h2 class="section-title">Education</h2>
+      <ul class="simple-list">
+        <li>
+          <div class="simple-meta">2020 — 2024</div>
+          <div class="simple-body">
+            <h3>대학교 이름</h3>
+            <p>학과 · 학위 (예: 컴퓨터공학 학사)</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-intro">새로운 기회나 협업 제안은 언제든 환영합니다.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:your@email.com">✉️ your@email.com</a></li>
+        <li><a href="https://github.com/yourname" target="_blank" rel="noopener">GitHub ↗</a></li>
+        <li><a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name. Built with HTML, CSS &amp; a little JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
