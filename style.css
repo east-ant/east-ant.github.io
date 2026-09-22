@@ -171,14 +171,37 @@ ul { margin: 0; padding: 0; list-style: none; }
 .project-card.featured .project-body { padding: 24px; }
 .project-card.featured h3 { font-size: 1.25rem; }
 .project-meta { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 10px; }
-.project-body h4 {
-  font-size: 0.8rem;
+/* 역할 / 문제 / 배운 점 / 기술 4칸 박스 */
+.info-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+}
+.info-box {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+}
+.info-box h4 {
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: .08em;
   color: var(--accent);
-  margin: 16px 0 6px;
+  margin: 0 0 8px;
 }
-.project-body h4 + .bullets { margin-top: 0; }
+.info-box ul { list-style: disc; padding-left: 16px; }
+.info-box li { font-size: 0.82rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 4px; }
+.info-box .tags { gap: 5px; }
+.info-box .tags span { font-size: 0.72rem; padding: 2px 8px; }
+
+@media (max-width: 720px) {
+  .info-boxes { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 420px) {
+  .info-boxes { grid-template-columns: 1fr; }
+}
 
 /* Skills */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 24px; }

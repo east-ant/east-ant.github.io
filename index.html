@@ -112,28 +112,39 @@
               실물 출력까지 이어지는 웹 서비스.
             </p>
 
-            <h4>주요 역할</h4>
-            <ul class="bullets">
-              <li>Next.js 15 / React / TypeScript로 업로드 → AI 생성 → 편집 → 출력의 6단계 플로우 설계·구현</li>
-              <li>GPT-4o-mini 프롬프트 설계: 사진 유형별 감정 키워드 추출, "문단 수 = 사진 수" 제약으로 사진–문단 1:1 매핑, 문체 통일 규칙</li>
-              <li>EXIF 촬영시각·GPS 추출 → 시간순 자동 정렬 및 Kakao 역지오코딩 장소명 표시</li>
-              <li>스티커 드래그·리사이즈 편집기 및 html2canvas 기반 인쇄용 이미지 렌더링 구현</li>
-            </ul>
-
-            <h4>해결한 문제</h4>
-            <ul class="bullets">
-              <li>편집 화면과 출력물의 색상·배경 줄무늬·페이지 분할이 어긋나는 문제 해결 — Tailwind v4의 oklch 색상을 캡처 전 RGB로 치환하고, 줄무늬는 CSS 대신 canvas에 직접 그리며, 페이지를 개별 캡처하도록 파이프라인 재설계</li>
-            </ul>
-
-            <h4>배운 점</h4>
-            <ul class="bullets">
-              <li>렌더링 라이브러리 한계에 부딪혔을 때 CSS를 고치기보다 출력 단계에서 직접 그리는 우회 판단</li>
-              <li>구두 합의로 API를 맞추다 방어 코드가 늘어난 경험에서, 인터페이스는 명세 문서로 먼저 고정해야 함을 체감</li>
-            </ul>
-
-            <div class="tags">
-              <span>Next.js</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span>
-              <span>Vercel AI SDK</span><span>OpenAI GPT-4o-mini</span><span>html2canvas</span><span>Kakao Local API</span>
+            <div class="info-boxes">
+              <div class="info-box">
+                <h4>주요 역할</h4>
+                <ul>
+                  <li>업로드 → AI 생성 → 편집 → 출력 6단계 플로우 구현</li>
+                  <li>GPT-4o-mini 프롬프트 설계 (사진–문단 1:1 매핑)</li>
+                  <li>EXIF 기반 시간순 정렬 · Kakao 장소명 표시</li>
+                  <li>스티커 편집기 · 인쇄용 이미지 렌더링</li>
+                </ul>
+              </div>
+              <div class="info-box">
+                <h4>해결한 문제</h4>
+                <ul>
+                  <li>편집 화면과 출력물이 어긋나는 문제</li>
+                  <li>oklch 색상 → RGB 치환</li>
+                  <li>줄무늬는 canvas에 직접 드로잉</li>
+                  <li>페이지 개별 캡처로 파이프라인 재설계</li>
+                </ul>
+              </div>
+              <div class="info-box">
+                <h4>배운 점</h4>
+                <ul>
+                  <li>라이브러리 한계는 CSS 수정보다 출력 단계에서 우회</li>
+                  <li>API 인터페이스는 명세 문서로 먼저 고정</li>
+                </ul>
+              </div>
+              <div class="info-box">
+                <h4>기술</h4>
+                <div class="tags">
+                  <span>Next.js</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span>
+                  <span>Vercel AI SDK</span><span>GPT-4o-mini</span><span>html2canvas</span><span>Kakao Local API</span>
+                </div>
+              </div>
             </div>
             <div class="project-links">
               <a href="https://github.com/east-ant" target="_blank" rel="noopener">GitHub ↗</a>
