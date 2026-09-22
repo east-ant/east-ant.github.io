@@ -165,6 +165,21 @@ ul { margin: 0; padding: 0; list-style: none; }
 .project-desc { color: var(--text-muted); font-size: 0.95rem; }
 .project-links { margin-top: auto; padding-top: 12px; display: flex; gap: 16px; font-weight: 600; font-size: 0.9rem; }
 
+/* 상세 설명이 긴 대표 프로젝트: 그리드 전체 너비 사용 */
+.project-card.featured { grid-column: 1 / -1; }
+.project-card.featured .project-thumb { aspect-ratio: 2 / 1; }
+.project-card.featured .project-body { padding: 24px; }
+.project-card.featured h3 { font-size: 1.25rem; }
+.project-meta { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 10px; }
+.project-body h4 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--accent);
+  margin: 16px 0 6px;
+}
+.project-body h4 + .bullets { margin-top: 0; }
+
 /* Skills */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 24px; }
 .skill-group h3 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: .08em; color: var(--text-muted); margin-bottom: 10px; }

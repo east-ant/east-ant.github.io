@@ -1,3 +1,8 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# 참고용 원본 이미지 (사이트에 올리지 않음)
+/*.jpg
+/*.jpeg
+/*.png
