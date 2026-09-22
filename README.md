@@ -7,7 +7,7 @@ andrewborstein.com 구조를 참고한 개인 포트폴리오 정적 사이트.
 - `index.html` — 페이지 전체 (Nav → Hero → About → Experience → Projects → Skills → Awards → Education → Contact → Footer)
 - `style.css` — 스타일 (라이트/다크 자동, 반응형)
 - `script.js` — 모바일 메뉴, 현재 섹션 하이라이트
-- `assets/` — 프로필 사진(`profile.jpg`), 프로젝트 스크린샷(`project-1.png` …)
+- `assets/` — 프로필 사진(`profile.png`), 프로젝트 스크린샷(`project-1.png` …)
 - `resume.pdf` — 이력서 (직접 추가)
 
 ## 로컬에서 보기
