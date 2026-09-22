@@ -124,6 +124,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* About */
 .about-grid { display: grid; grid-template-columns: 160px 1fr; gap: 32px; align-items: start; }
+.about-grid.no-photo { grid-template-columns: 1fr; }
 .about-photo { width: 160px; height: 160px; object-fit: cover; border-radius: 50%; border: 1px solid var(--border); }
 .about-text p { font-size: 1.05rem; }
 

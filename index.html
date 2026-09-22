@@ -51,7 +51,7 @@
     <section id="about" class="section container">
       <h2 class="section-title">About</h2>
       <div class="about-grid">
-        <img src="assets/profile.jpg" alt="프로필 사진" class="about-photo" onerror="this.style.display='none'" />
+        <img src="assets/profile.jpg" alt="프로필 사진" class="about-photo" onerror="this.closest('.about-grid').classList.add('no-photo'); this.remove()" />
         <div class="about-text">
           <p>
             안녕하세요, <strong>Your Name</strong>입니다. 여기에 자신의 이야기를 적어주세요.
