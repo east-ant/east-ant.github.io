@@ -173,6 +173,30 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .project-meta { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 6px; }
 
+/* Other projects — 가벼운 한 줄 목록 */
+.subsection-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+  margin: 36px 0 12px;
+}
+.mini-projects li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-top: 1px dashed var(--border);
+}
+.mini-projects li:last-child { border-bottom: 1px dashed var(--border); }
+.mini-projects a { font-weight: 600; color: var(--text); }
+.mini-projects a:hover { color: var(--accent); }
+.mini-desc { display: block; font-size: 0.85rem; color: var(--text-muted); margin-top: 2px; }
+.mini-meta { font-size: 0.8rem; color: var(--text-muted); white-space: nowrap; }
+@media (max-width: 720px) {
+  .mini-projects li { flex-direction: column; gap: 4px; }
+}
+
 /* Skills */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 24px; }
 .skill-group h3 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: .08em; color: var(--text-muted); margin-bottom: 10px; }
