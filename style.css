@@ -96,6 +96,12 @@ ul { margin: 0; padding: 0; list-style: none; }
   letter-spacing: -0.02em;
   margin-bottom: 20px;
 }
+.hero-handle {
+  font-family: ui-monospace, "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+  font-size: clamp(2.8rem, 9vw, 5rem);
+  letter-spacing: -0.03em;
+}
+.hero-handle::before { content: "@"; color: var(--accent); }
 .hero-tagline { font-size: 1.15rem; color: var(--text-muted); max-width: 600px; margin-bottom: 28px; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 .btn {
