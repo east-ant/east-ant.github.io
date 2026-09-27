@@ -1,3 +1,31 @@
+// 유리 커서: 마우스를 부드럽게 따라가고, 링크/버튼 위에서 커짐
+(() => {
+  const cursor = document.querySelector(".cursor");
+  if (!cursor || !window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+
+  let targetX = -100, targetY = -100, x = targetX, y = targetY;
+
+  window.addEventListener("mousemove", (e) => {
+    targetX = e.clientX; targetY = e.clientY;
+    cursor.classList.add("visible");
+  });
+  document.addEventListener("mouseleave", () => cursor.classList.remove("visible"));
+  window.addEventListener("mousedown", () => cursor.classList.add("down"));
+  window.addEventListener("mouseup", () => cursor.classList.remove("down"));
+
+  const hoverTargets = "a, button, .project-card, .mini-projects li";
+  document.addEventListener("mouseover", (e) => {
+    cursor.classList.toggle("hover", !!e.target.closest(hoverTargets));
+  });
+
+  (function follow() {
+    x += (targetX - x) * 0.18;
+    y += (targetY - y) * 0.18;
+    cursor.style.transform = `translate(${x}px, ${y}px)`;
+    requestAnimationFrame(follow);
+  })();
+})();
+
 // 푸터 연도 자동 갱신
 document.getElementById("year").textContent = new Date().getFullYear();
 
